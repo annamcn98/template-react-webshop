@@ -2,7 +2,6 @@ import React, {useState, useEffect} from 'react'
 import ProductItem from '../components/ProductItem';
 import Product from './Product';
 
-//"Home"-page
 
 function Products() {
 

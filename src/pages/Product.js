@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import { useParams } from "react-router-dom"
-
-//Product with id: ___ 
+import Nav from '../components/Nav';
 
 
 function Product() {
@@ -25,8 +24,6 @@ function Product() {
     fetchProduct();
   },[])
 
-  //params.id
-
   return (
     
     <article>
@@ -35,7 +32,9 @@ function Product() {
       <p>Beskrivning: {product.description}</p>
       <h3>Lagerstatus: {product.storage} stk i lager</h3>
       <h2>Pris: {product.price} SEK</h2>
-  </article>
+    </article>
+
+
   )
 }
 
