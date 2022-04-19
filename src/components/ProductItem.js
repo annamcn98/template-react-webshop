@@ -9,7 +9,7 @@ function ProductItem({product}) {
           <h1>{product.title}</h1>
         </Link>
           <img src={product.url}></img>
-          <h3>{product.price}</h3>
+          <h3>Pris: {product.price} SEK</h3>
     </article>
       )
 }
