@@ -1,8 +1,8 @@
 import React, {useState, useEffect} from 'react'
 import ProductItem from '../components/ProductItem';
-import Product from './Product';
+import styled from 'styled-components'
 
-//"Home"-page
+
 
 function Products() {
 
@@ -10,7 +10,7 @@ function Products() {
 
   const fetchProducts = async () => {
     try {
-      const response = await fetch('https://codexplained.se/cars.php');
+      const response = await fetch('https://codexplained.se/electronics.php');
       const data = await response.json();
       console.log(data)
       
@@ -29,8 +29,9 @@ function Products() {
 
   return (
     <div>
+        <h1>All products</h1>
+    <Parentdiv>
       
-        <h1>Products</h1>
         {
           products.map((product) => 
                (
@@ -39,8 +40,16 @@ function Products() {
           )
         }
 
+    </Parentdiv>
     </div>
   )
 }
+
+const Parentdiv = styled.div`
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+border: solid 4px black;
+`
 
 export default Products

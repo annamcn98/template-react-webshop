@@ -1,17 +1,34 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import styled from 'styled-components'
 
 
 function ProductItem({product}) {
   return (
-    <article>
+
+    <Article>
         <Link to={`/products/${product.id}`}>
           <h1>{product.title}</h1>
         </Link>
-          <img src={product.url}></img>
-          <h3>{product.price}</h3>
-    </article>
+          <Img src={product.url}></Img>
+          <h3>Price {product.price} SEK</h3>
+    </Article>
+  
       )
 }
+
+const Article = styled.article`
+display: flex;
+flex-direction: column;
+border: 1px pink solid;
+padding: 100px 40px;
+margin: 40px;
+`
+
+const Img = styled.img `
+padding: 40px 0px;
+max-width: 1080px;
+max-height: 1350px;
+`
 
 export default ProductItem

@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import { useParams } from "react-router-dom"
-
-//Product with id: ___ 
+import Nav from '../components/Nav';
 
 
 function Product() {
@@ -11,7 +10,7 @@ function Product() {
 
   const fetchProduct = async () => {
   try {
-    const response = await fetch('https://codexplained.se/cars.php?id=' + params.id);
+    const response = await fetch('https://codexplained.se/electronics.php?id=' + params.id);
     const data = await response.json();
     console.log(data)
     
@@ -25,8 +24,6 @@ function Product() {
     fetchProduct();
   },[])
 
-  //params.id
-
   return (
     
     <article>
@@ -35,7 +32,9 @@ function Product() {
       <p>Beskrivning: {product.description}</p>
       <h3>Lagerstatus: {product.storage} stk i lager</h3>
       <h2>Pris: {product.price} SEK</h2>
-  </article>
+    </article>
+
+
   )
 }
 
