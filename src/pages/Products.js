@@ -49,7 +49,6 @@ const Parentdiv = styled.div`
 display: flex;
 flex-wrap: wrap;
 justify-content: center;
-border: solid 4px black;
 `
 
 export default Products

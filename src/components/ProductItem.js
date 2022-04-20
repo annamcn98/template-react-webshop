@@ -20,9 +20,12 @@ function ProductItem({product}) {
 const Article = styled.article`
 display: flex;
 flex-direction: column;
-border: 1px pink solid;
 padding: 100px 40px;
 margin: 40px;
+
+&:hover{
+box-shadow: 4px 8px lightgray;
+}
 `
 
 const Img = styled.img `
