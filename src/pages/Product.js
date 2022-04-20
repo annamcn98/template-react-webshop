@@ -25,7 +25,10 @@ function Product() {
   },[])
 
   return (
-    
+
+    <div>
+      <Nav />
+      
     <article>
       <h1>{product.title}</h1>
       <img src={product.url}></img>
@@ -33,6 +36,9 @@ function Product() {
       <h3>Lagerstatus: {product.storage} stk i lager</h3>
       <h2>Pris: {product.price} SEK</h2>
     </article>
+
+    </div>
+    
 
 
   )
