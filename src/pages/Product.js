@@ -10,7 +10,7 @@ function Product() {
 
   const fetchProduct = async () => {
   try {
-    const response = await fetch('https://codexplained.se/cars.php?id=' + params.id);
+    const response = await fetch('https://codexplained.se/electronics.php?id=' + params.id);
     const data = await response.json();
     console.log(data)
     
