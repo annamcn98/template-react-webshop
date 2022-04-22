@@ -21,7 +21,7 @@ function Header() {
 const Div = styled.div`
 flex-direction: column;
 background-color: white;
-height: 30vw;
+height: 25vw;
 display: flex;
 align-items: center;
 `

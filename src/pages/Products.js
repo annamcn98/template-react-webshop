@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import ProductItem from '../components/ProductItem';
 import styled from 'styled-components'
+import { motion } from "framer-motion"
 
 
 
@@ -34,9 +35,11 @@ function Products() {
       </H2>
         <Title className='all-products'>
           All products
-            <Emoji>
+            <motion.Emoji
+              animate={{y:[0,100,0,100,0,100]}}
+              transition={{ duration: 4, delay: 1}}            >
               &#128071;&#127997;
-              </Emoji>
+              </motion.Emoji>
         </Title>
     <Parentdiv>
       
@@ -74,11 +77,12 @@ height: 15vh;
 `
 
 const H2 = styled(Title) `
+text-align: center;
 font-size: 4em;
 color: white;
 background-color:#f5b5d2;
 height: 50vh;
-padding: 0px 40px
+padding: 0px 400px
 `
 const Parentdiv = styled.div`
 display: flex;
