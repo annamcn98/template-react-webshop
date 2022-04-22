@@ -5,7 +5,8 @@ import styled from 'styled-components'
 function Nav() {
   return (
     <Linkdiv>
-        <Styledlink to='/products'><h2>Show all products</h2></Styledlink>
+        <Styledlink to='/products'><h2>• Show all products • </h2></Styledlink>
+        <Styledlink to='/'><h2> Our philosophy •</h2></Styledlink>
     </Linkdiv>
   )
 }
@@ -20,7 +21,8 @@ color: #f5b5d2;
 `
 
 const Linkdiv = styled.div `
-padding: 50px 0px;
+display: flex;
+justify-content: center;
 `
 
 

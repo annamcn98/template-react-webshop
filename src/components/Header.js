@@ -11,7 +11,9 @@ function Header() {
       <Link to='/products'>
       <Img src={logo} alt="Logo"></Img>
       </Link>
+      <Navdiv>
         <Nav />
+      </Navdiv>
       </Div>
   )
 }
@@ -19,14 +21,20 @@ function Header() {
 const Div = styled.div`
 flex-direction: column;
 background-color: white;
-height: 60vh;
+height: 25vw;
 display: flex;
 align-items: center;
 `
 
 const Img = styled.img `
-height: 50vh;
+height: 20vw;
 width: 100vw;
+`
+
+const Navdiv = styled.div `
+height: 10vw;
+display: flex;
+align-items: center;
 `
 
 export default Header

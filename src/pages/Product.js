@@ -49,10 +49,12 @@ const Parentdiv = styled.div`
 display: flex;
 flex-wrap: wrap;
 justify-content: center;
-padding-top: 150px;
+align-items: center;
 width: auto;
-height: 60vh;
+height: 72vh;
+padding: 100px 0px;
 background-color:#f4f4f4;  
+
 `
 
 const Article = styled.article `

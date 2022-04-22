@@ -11,7 +11,7 @@ function Footer() {
 
 const Div = styled.div`
 background-color: #fbd99d;
-height: 20vh;
+height: 15vh;
 display: flex;
 justify-content: center;
 align-items: center;
