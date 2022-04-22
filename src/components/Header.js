@@ -1,26 +1,32 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
+import Nav from './Nav'
+import logo from './Revive.png'
 
 function Header() {
   return (
+    
     <Div>
-      <Headline>
-        LOGO/SLOGAN
-      </Headline>
-    </Div>
+      <Link to='/products'>
+      <Img src={logo} alt="Logo"></Img>
+      </Link>
+        <Nav />
+      </Div>
   )
 }
 
 const Div = styled.div`
-background-color: papayawhip;
-height: 10vh;
-margin: 0px 10px;
-
+flex-direction: column;
+background-color: white;
+height: 60vh;
+display: flex;
+align-items: center;
 `
 
-const Headline = styled.h1 `
-color: violet;
-padding-top: 40px;
+const Img = styled.img `
+height: 50vh;
+width: 100vw;
 `
 
 export default Header

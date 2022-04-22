@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import { useParams } from "react-router-dom"
+import styled from 'styled-components'
 import Nav from '../components/Nav';
 
 
@@ -27,21 +28,62 @@ function Product() {
   return (
 
     <div>
-      <Nav />
-      
-    <article>
-      <h1>{product.title}</h1>
-      <img src={product.url}></img>
-      <p>Beskrivning: {product.description}</p>
-      <h3>Lagerstatus: {product.storage} stk i lager</h3>
-      <h2>Pris: {product.price} SEK</h2>
-    </article>
+      <Parentdiv>
+            <div>
+              <Img src={product.url}></Img>
+            </div>
+            <Article>
+              <H2>{product.title}</H2>
+              <Description>Description: {product.description}</Description>
+              <H3>Storage: {product.storage} left in stock</H3>
+              <Price>{product.price} SEK</Price>
+            </Article>
+      </Parentdiv>
 
     </div>
-    
-
 
   )
 }
+
+const Parentdiv = styled.div`
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+padding-top: 150px;
+width: auto;
+height: 60vh;
+background-color:#f4f4f4;  
+`
+
+const Article = styled.article `
+display: flex;
+align-items: flex-start;
+flex-direction: column;
+width: 500px;
+margin-left: 100px;
+`
+
+const Img = styled.img `
+max-width: 1500px;
+max-height: 1080px;
+`
+
+const H2 = styled.h2 `
+font-size: 4em;
+`
+
+const Description = styled.p `
+font-size: 2em;
+
+`
+const H3 = styled.h3 `
+font-size: 2em;
+
+`
+
+const Price = styled(H2) `
+
+`
+
 
 export default Product

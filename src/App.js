@@ -7,7 +7,6 @@ import {
 import Products from './pages/Products';
 import Product from './pages/Product';
 import Checkout from './pages/Checkout';
-import Nav from './components/Nav';
 import Header from './components/Header';
 import Footer from './components/Footer';
 

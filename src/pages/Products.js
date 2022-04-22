@@ -29,7 +29,15 @@ function Products() {
 
   return (
     <div>
-        <h1>All products</h1>
+      <H2>
+        Welcome to Revive, this is where we give new life to electronics who has been on your shelf too long for you to keep it to yourself!
+      </H2>
+        <Title className='all-products'>
+          All products
+            <Emoji>
+              &#128071;&#127997;
+              </Emoji>
+        </Title>
     <Parentdiv>
       
         {
@@ -45,6 +53,32 @@ function Products() {
   )
 }
 
+
+
+const Emoji = styled.span `
+padding-top: 100px;
+height: 50px;
+width: 50px;
+
+`
+
+const Title = styled.h1 `
+padding: 50px 0px;
+font-size: 5em;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+color: black;
+height: 15vh;
+`
+
+const H2 = styled(Title) `
+font-size: 4em;
+color: white;
+background-color:#f5b5d2;
+height: 50vh;
+`
 const Parentdiv = styled.div`
 display: flex;
 flex-wrap: wrap;

@@ -4,22 +4,24 @@ import styled from 'styled-components'
 function Footer() {
   return (
     <Div>
-      <Headline>Copyright</Headline>
+      <Headline>Copyright by Anna Nilsson</Headline>
     </Div>
   )
 }
 
 const Div = styled.div`
-background-color: papayawhip;
-height: 10vh;
-margin: 0px 10px;
+background-color: #fbd99d;
+height: 20vh;
+display: flex;
+justify-content: center;
+align-items: center;
 
 `
 
 const Headline = styled.p `
-color: violet;
-padding-top: 40px;
-font-size: xx-large;
+color: white;
+font-size: 3em;
+font-weight: bold;
 `
 
 export default Footer
