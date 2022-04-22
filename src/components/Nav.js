@@ -20,7 +20,6 @@ color: #f5b5d2;
 `
 
 const Linkdiv = styled.div `
-padding: 50px 0px;
 `
 
 

@@ -29,7 +29,6 @@ padding: 100px 40px;
 margin: 60px 100px;
 color: black;
 width: 1080px;
-
 &:hover{
 
   background-color:#f4f4f4;  

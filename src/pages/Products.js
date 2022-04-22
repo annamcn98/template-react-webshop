@@ -56,7 +56,7 @@ function Products() {
 
 
 const Emoji = styled.span `
-padding-top: 100px;
+padding-top: 50px;
 height: 50px;
 width: 50px;
 
@@ -78,6 +78,7 @@ font-size: 4em;
 color: white;
 background-color:#f5b5d2;
 height: 50vh;
+padding: 0px 40px
 `
 const Parentdiv = styled.div`
 display: flex;
